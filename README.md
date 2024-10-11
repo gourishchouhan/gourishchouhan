@@ -1,6 +1,6 @@
 <h2 align="center">ᴀʙᴏᴜᴛ ᴍᴇ</h2>
 <p align="center">
-  Hi, I'm Arman, a full-stack developer passionate about creating applications that address real-world challenges. Currently, I specialize in web development and am also working with Ruby on Rails (RoR). I have completed projects in both areas and am eager to embrace new challenges. I am dedicated to leveraging technology to make a positive impact and continually seek opportunities for learning and personal growth.
+  Hi, I'm Gourish Chouhan, a full-stack developer passionate about creating applications that address real-world challenges. Currently, I specialize in web development and am also working with Ruby on Rails (RoR). I have completed projects in both areas and am eager to embrace new challenges. I am dedicated to leveraging technology to make a positive impact and continually seek opportunities for learning and personal growth.
 </p>
 
 <h2 align="center">ꜱᴏᴄɪᴀʟꜱ</h2>
