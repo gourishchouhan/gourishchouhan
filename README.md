@@ -44,11 +44,6 @@
     - **MongoDB**: For flexible data storage solutions.
 </p>
 
-<h2 align="center">🎉 ꜱʜᴀʀɪɴɢ ꜱʟɪʟʟꜱ</h2>
-<p align="center">
-    I enjoy sharing knowledge through blogging and mentoring. If you're looking for guidance or want to discuss tech trends, feel free to reach out!
-</p>
-
 <p align="center">
     <span class='pulse'>✨ Let's innovate together! ✨</span>
 </p>
