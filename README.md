@@ -1,15 +1,16 @@
-<h2 align="center">ᴀʙᴏᴜᴛ ᴍᴇ</h2>
+<h2 align="center">👋 ᴀʙᴏᴜᴛ ᴍᴇ</h2>
 <p align="center">
-  Hi, I'm Gourish Chouhan, a full-stack developer passionate about creating applications that address real-world challenges. Currently, I specialize in web development and am also working with Ruby on Rails (RoR). I have completed projects in both areas and am eager to embrace new challenges. I am dedicated to leveraging technology to make a positive impact and continually seek opportunities for learning and personal growth.
+  Hey there! I'm **Gourish Chouhan**, a passionate full-stack developer on a mission to turn ideas into reality. 🌟 With a strong focus on the MERN stack and Ruby on Rails, I thrive on tackling real-world challenges through innovative web applications. 🚀 I'm always eager to learn new technologies and embrace exciting challenges that push my limits!
 </p>
 
-<h2 align="center">ꜱᴏᴄɪᴀʟꜱ</h2>
+<h2 align="center">🔗 ꜱᴏᴄɪᴀʟꜱ</h2>
 <p align="center"> 
   <a href="https://www.linkedin.com/in/gourishchouhan/" target="_blank"><img alt="linkedin" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://leetcode.com/u/gourishchouhan/" target="_blank"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" /></a>
+  <a href="https://github.com/gourishchouhan" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
-<h2 align="center">ᴛᴇᴄʜɴᴏʟᴏɢɪᴄᴀʟ ꜱᴛᴀᴄᴋ</h2>
+<h2 align="center">🛠️ ᴛᴇᴄʜɴᴏʟᴏɢɪᴄᴀʟ ꜱᴛᴀᴄᴋ</h2>
 <p align="center">
   <img alt="html" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
   <img alt="css" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
@@ -27,4 +28,38 @@
   <img alt="mysql" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" />
   <img alt="git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
   <img alt="obsidian" src="https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&logo=obsidian&logoColor=white" />
+</p>
+
+<h2 align="center">💡 ᴀʍʙɪᴛɪᴏɴꜱ</h2>
+<p align="center">
+  I'm not just a coder; I'm a problem-solver! 🧩 My goal is to create impactful applications that enhance user experiences and contribute to the tech community. Let's connect and collaborate to build something amazing together! 🤝
+</p>
+
+<h2 align="center">✨ ꜰᴀʋᴏʀɪᴛᴇ ꜱǫᴜᴀʀᴇꜱ</h2>
+<p align="center">
+    I love exploring new technologies and frameworks! Here are some of my favorites:
+    - **React**: For building dynamic user interfaces.
+    - **Node.js**: To create fast and scalable server-side applications.
+    - **MongoDB**: For flexible data storage solutions.
+</p>
+
+<h2 align="center">🎉 ꜱʜᴀʀɪɴɢ ꜱʟɪʟʟꜱ</h2>
+<p align="center">
+    I enjoy sharing knowledge through blogging and mentoring. If you're looking for guidance or want to discuss tech trends, feel free to reach out!
+</p>
+
+<!-- Optional Animation Section -->
+<style>
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    animation: pulse 1s infinite;
+}
+</style>
+
+<p align="center">
+    <span class='pulse'>✨ Let's innovate together! ✨</span>
 </p>
