@@ -48,18 +48,6 @@
     I enjoy sharing knowledge through blogging and mentoring. If you're looking for guidance or want to discuss tech trends, feel free to reach out!
 </p>
 
-<!-- Optional Animation Section -->
-<style>
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-.pulse {
-    animation: pulse 1s infinite;
-}
-</style>
-
 <p align="center">
     <span class='pulse'>✨ Let's innovate together! ✨</span>
 </p>
