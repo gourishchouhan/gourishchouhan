@@ -14,12 +14,5 @@ val gourishChouhan = UserProfile(
     ),
     status = "Seeking innovative opportunities."
 )
-
-fun establishConnections(): Map<String, String> {
-    println("Establishing secure connection protocols...")
-    return mapOf(
-        "linkedin" to "https://www.linkedin.com/in/gourishchouhan/"
-    )
-}
 main()
 ```
