@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { ExternalLink, Github } from "lucide-react"
+import Image from "next/image"
 
 const projects = [
   {
@@ -75,7 +76,7 @@ export default function Projects() {
               className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"

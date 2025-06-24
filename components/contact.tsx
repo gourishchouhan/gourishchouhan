@@ -1,13 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -19,7 +18,9 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Let&apos;s Connect
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-gray-800 to-black mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to discuss opportunities and bring innovative ideas to life
@@ -34,8 +35,9 @@ export default function Contact() {
             className="text-center mb-12"
           >
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-              I'm always excited to discuss new opportunities, innovative projects, and potential collaborations. Let's
-              connect and explore how we can work together to create something amazing.
+              I&apos;m always excited to discuss new opportunities, innovative
+              projects, and potential collaborations. Let&apos;s connect and
+              explore how we can work together to create something amazing.
             </p>
           </motion.div>
 
@@ -53,7 +55,9 @@ export default function Contact() {
             >
               <Mail className="text-gray-700 mb-4" size={32} />
               <h3 className="text-gray-900 font-semibold mb-2">Email</h3>
-              <p className="text-gray-600 text-center">gourish.chouhan@example.com</p>
+              <p className="text-gray-600 text-center">
+                gourish.chouhan@example.com
+              </p>
             </motion.a>
 
             <motion.a
@@ -82,10 +86,9 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex justify-center space-x-6"
-          >
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
