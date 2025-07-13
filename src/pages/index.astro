@@ -1,18 +1,27 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
-
-//   Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/astro/Header.astro';
+import Hero from '../components/astro/Hero.astro';
+import About from '../components/astro/About.astro';
+import Projects from '../components/astro/Projects.astro';
+import Skills from '../components/astro/Skills.astro';
+import Contact from '../components/astro/Contact.astro';
+import Footer from '../components/astro/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
-  <div class="bg-red-500">
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  </div>
-  </Layout>
+<Layout 
+  title="Gourish Chouhan - Software Product Engineer"
+  description="Software Product Engineer passionate about building scalable applications with modern technologies. Explore my portfolio of full-stack projects and technical expertise."
+>
+  <Header />
+  
+  <main>
+    <Hero />
+    <About />
+    <Projects />
+    <Skills />
+    <Contact />
+  </main>
+  
+  <Footer />
 </Layout>
