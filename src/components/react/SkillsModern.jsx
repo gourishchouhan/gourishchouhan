@@ -42,7 +42,7 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-black">
+    <section id="skills" className="py-20 bg-secondary-50 dark:bg-secondary-800">
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
@@ -52,14 +52,13 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Technical Skills</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-gray-800 to-black dark:from-gray-400 dark:to-white mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Proficient in modern technologies and frameworks for building scalable applications
           </p>
         </motion.div>
 
         {/* Skills Carousel */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden py-2">
           <motion.div
             className="flex space-x-8"
             animate={{
@@ -94,8 +93,8 @@ export default function Skills() {
           </motion.div>
 
           {/* Gradient overlays for smooth edges */}
-          <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-gray-50 dark:from-black to-transparent pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-gray-50 dark:from-black to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-secondary-50 dark:from-secondary-800 to-transparent pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-secondary-50 dark:from-secondary-800 to-transparent pointer-events-none"></div>
         </div>
 
         {/* Skills Categories */}
@@ -119,7 +118,7 @@ export default function Skills() {
           </div>
           <div className="text-center">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Tools</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">Git, Docker, AWS, Figma</p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">Git, Docker, Figma</p>
           </div>
         </motion.div>
       </div>
