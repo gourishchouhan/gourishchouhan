@@ -12,6 +12,7 @@ val gourishChouhan = UserProfile(
         "Transforming complex challenges into elegant code",
         "Continuous learning & technology adaptation"
     ),
-    status = "Seeking innovative opportunities."
+    status = "Seeking innovative opportunities.",
+    portfolio = "https://gourishchouhan.vercel.app"
 )
 main()
