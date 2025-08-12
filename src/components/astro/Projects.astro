@@ -7,7 +7,7 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Vanta.js"],
     github: "https://github.com/kalviumcommunity/S65_Gourish_Chouhan_Capstone_RaiseIt",
     live: "https://raiseit-phi.vercel.app",
-    image: "/api/placeholder/400/250"
+    image: "/raiseit.png"
   },
   {
     title: "Whispr",
@@ -15,7 +15,7 @@ const projects = [
     technologies: ["Next.js", "Socket.io", "MongoDB", "Tailwind"],
     github: "https://github.com/cometerm/whispr",
     live: "https://whispr-gilt.vercel.app/",
-    image: "/api/placeholder/400/250"
+    image: "/whispr.png"
   },
   {
     title: "Imaverter",
@@ -23,7 +23,7 @@ const projects = [
     technologies: ["Next.js", "Colourjs.io", "kmeans"],
     github: "https://github.com/armancurr/imaverter",
     live: "https://imaverter.vercel.app/",
-    image: "/api/placeholder/400/250"
+    image: "/imaverter.png"
   }
 ];
 ---
@@ -47,12 +47,8 @@ const projects = [
         <div class="card card-hover group animate-on-scroll overflow-hidden" style={`animation-delay: ${index * 200}ms`}>
           <!-- Project image -->
           <div class="relative overflow-hidden bg-secondary-100 dark:bg-secondary-700 h-48">
-            <div class="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <svg class="w-16 h-16 text-secondary-400 dark:text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-              </svg>
-            </div>
+            <img src={project.image} alt={project.title + ' preview'} loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20 mix-blend-multiply pointer-events-none"></div>
             <!-- Overlay with links -->
             <div class="absolute inset-0 bg-secondary-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
               <a 
@@ -128,5 +124,4 @@ const projects = [
       ))}
     </div>
   </div>
-</section>
 </section>

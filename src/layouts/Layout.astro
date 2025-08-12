@@ -38,7 +38,17 @@ const { title, description = "Gourish Chouhan's personal portfolio - Software Pr
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   
-  <body class="min-h-screen">
+  <body class="min-h-screen relative overflow-x-hidden">
+    <!-- Global Background Patterns (light & dark) -->
+    <div class="pointer-events-none absolute inset-0 -z-10">
+      <!-- Dark mode pattern -->
+      <div class="hidden dark:block absolute inset-0" aria-hidden="true" style="background:radial-gradient(ellipse 80% 60% at 50% 0%, rgba(6, 182, 212, 0.25), transparent 70%), #000000;"></div>
+      <!-- Light mode pattern -->
+      <div class="dark:hidden absolute inset-0" aria-hidden="true" style="background:#ffffff;">
+        <div class="absolute inset-0" style="background:radial-gradient(circle at top center, rgba(56, 193, 182, 0.5), transparent 70%); filter:blur(80px); background-repeat:no-repeat;"></div>
+      </div>
+    </div>
+
     <!-- Progress bar -->
     <ProgressBar client:load />
     

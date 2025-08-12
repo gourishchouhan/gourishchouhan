@@ -163,6 +163,15 @@
       transform: translateY(-10px);
     }
   }
+  
+  /* Ensure dark/light pattern container layering and optional background smoothing */
+  .container {
+    @apply relative z-0;
+  }
+  
+  .bg-smooth {
+    @apply bg-opacity-60;
+  }
 }
 
 /* Intersection Observer animations */
