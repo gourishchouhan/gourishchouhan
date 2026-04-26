@@ -1,12 +1,17 @@
-<!--
-  Gourish Chouhan
-  Status: Active Development
--->
+<div align="center">
 
-```kotlin
-val gourishChouhan = UserProfile(
-    name = "Gourish Chouhan",
-    role = "Full-Stack Developer",
-    portfolio = "https://gourishchouhan.vercel.app"
-)
-main()
+
+█ ▌█▌▌ ██ ▌█ ▌▌█▌▌ ██▌ █▌▌ ██ ▌▌█ █▌█ ▌▌ ██▌█ ▌█ ▌▌ █▌▌█ █▌ ▌█
+
+
+**GOURISH CHOUHAN**
+
+<sub>F U L L &nbsp; S T A C K &nbsp; D E V E L O P E R</sub>
+
+
+█ ▌█▌▌ ██ ▌█ ▌▌█▌▌ ██▌ █▌▌ ██ ▌▌█ █▌█ ▌▌ ██▌█ ▌█ ▌▌ █▌▌█ █▌ ▌█
+
+
+<sub>[gourishchouhan.vercel.app](https://gourishchouhan.vercel.app)</sub>
+
+</div>
