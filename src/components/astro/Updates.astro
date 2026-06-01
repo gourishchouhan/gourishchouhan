@@ -1,0 +1,47 @@
+---
+const updates = [
+  'Version 9.9.9: Added more drama per pixel.',
+  'Patch note: zero whitespace left unchaosed.',
+  'Status: portfolio still louder than necessary.',
+];
+---
+
+<section class="section-padding relative overflow-hidden">
+  <div class="absolute inset-0 bg-noise-grid opacity-20"></div>
+  <div class="container-custom relative">
+    <div class="mb-10 text-center animate-on-scroll">
+      <h2 class="gradient-text mb-5 text-3xl font-bold md:text-4xl lg:text-5xl">Latest Drama Updates</h2>
+      <p class="mx-auto max-w-3xl text-lg font-bold text-black">
+        A totally necessary patch-notes zone so the portfolio can feel like a live service game instead of a normal website.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+      <div class="card p-6 animate-on-scroll">
+        <div class="mb-5 flex flex-wrap gap-3">
+          <span class="chaos-chip">LIVE</span>
+          <span class="chaos-chip">LOUD</span>
+          <span class="chaos-chip">UNNECESSARY</span>
+        </div>
+        <div class="space-y-4 text-black">
+          {updates.map((update, index) => (
+            <div class="border-4 border-black bg-white/70 p-4 font-bold shadow-[6px_6px_0_#000]" style={`transform: rotate(${index % 2 === 0 ? '-1deg' : '1deg'});`}>
+              <p class="text-sm uppercase">Update 0{index + 1}</p>
+              <p class="mt-2 text-lg">{update}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="ascii-panel animate-on-scroll text-xs leading-relaxed">
+        <pre>{String.raw`CRINGE MONITOR
+--------------
+particles..... stable
+popups........ active
+marquees...... thriving
+good taste.... offline
+fps........... rescued`}</pre>
+      </div>
+    </div>
+  </div>
+</section>

@@ -2,49 +2,88 @@
 // Modern hero section
 ---
 
-<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-40 pb-24 md:px-6">
   <!-- Background gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-secondary-900 dark:via-secondary-800 dark:to-secondary-900"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-pink-400 via-yellow-200 to-cyan-300"></div>
   
   <!-- Animated background elements -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-primary-200/30 to-accent-200/30 rounded-full blur-3xl animate-float"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-accent-200/20 to-primary-200/20 rounded-full blur-3xl animate-float animation-delay-400"></div>
-    <div class="absolute top-1/2 right-1/3 w-48 h-48 bg-gradient-to-r from-primary-300/25 to-accent-300/25 rounded-full blur-2xl animate-float animation-delay-800"></div>
+    <div class="absolute bottom-1/4 right-[8%] text-[7rem] md:text-[9rem] animate-spin">🤡</div>
+    <div class="absolute top-1/2 right-[22%] text-[5rem] md:text-[7rem] animate-pulse">🌈</div>
+    <div class="absolute left-[5%] top-[14%] chaos-chip hidden md:inline-flex">HOT STUFF!!! 🔥</div>
+    <div class="absolute right-[8%] top-[24%] chaos-chip animation-delay-400 hidden md:inline-flex">100% AWESOME!!! 😎</div>
+    <div class="absolute left-[10%] bottom-[22%] chaos-chip animation-delay-800 hidden lg:inline-flex">HIRE ME MAYBE??? 💼</div>
+    <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+      <div class="ascii-panel max-w-4xl text-[10px] sm:text-xs blink-hard">
+        <pre>{String.raw`<marquee>gourish hype train departing platform 9 and 3 quarters</marquee>   <blink>visual overload confirmed</blink>   <font color="red">elite aura detected</font>`}</pre>
+      </div>
+    </div>
   </div>
   
   <!-- Content -->
   <div class="relative z-10 container-custom text-center">
     <div class="max-w-4xl mx-auto">
       <!-- Main heading -->
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-secondary-900 dark:text-white mb-6 animate-slide-up">
-        Gourish Chouhan
+      <p class="mb-6 inline-flex items-center gap-3 border-4 border-black bg-white/70 px-4 py-3 text-sm font-bold uppercase shadow-[8px_8px_0_#000] blink-hard">
+        <span>official sigma portfolio</span>
+        <span>!!!</span>
+      </p>
+
+      <h1 class="mb-6 animate-on-scroll text-[clamp(3.2rem,11vw,8rem)] font-black leading-[0.92] gradient-text break-words">
+        GOURISH<br />
+        <span class="text-black">ULTRA DELUXE</span>
       </h1>
       
       <!-- Subtitle -->
-      <p class="text-xs md:text-xl lg:text-2xl text-secondary-600 dark:text-secondary-300 mb-8 animate-slide-up animation-delay-200 text-balance">
-        A full-stack developer specializing in scalable web applications and clean, responsive user
-        interfaces using modern technologies
+      <p class="mb-8 animate-on-scroll animation-delay-200 text-balance text-xl font-bold leading-snug text-fuchsia-700 md:text-3xl lg:text-4xl">
+        I AM THE BEST CODER IN THE GALAXY!!! 🚀✨<br/>
+        LOOK AT MY COOL WEBSITE!!! 💻🔥<br/>
+        MORE COLOR = MORE TALENT!!! 🌈⚡
       </p>
+
+      <div class="mb-10 flex flex-wrap justify-center gap-3 animate-on-scroll animation-delay-400">
+        <span class="chaos-chip">React Beast Mode</span>
+        <span class="chaos-chip">Pixel Perfect-ish</span>
+        <span class="chaos-chip">Bug Whisperer???</span>
+        <span class="chaos-chip">Runs On Vibes</span>
+      </div>
     
       
       <!-- CTA buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up animation-delay-600">
-        <a href="#projects" class="btn-primary group">
-          View My Work
-          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
+      <div class="flex flex-col sm:flex-row gap-8 justify-center items-center animate-on-scroll animation-delay-600">
+        <a href="#projects" class="btn-primary group text-center text-xl sm:text-2xl">
+          CLICK ME NOW!!! 🖱️
         </a>
-        <a href="#contact" class="btn-secondary">
-          Get In Touch
+        <a href="#contact" class="btn-secondary text-center text-xl sm:text-2xl px-5">
+          INBOX ME, SUPERSTAR!!! 💌
         </a>
+      </div>
+
+      <div class="mt-12 ascii-panel mx-auto max-w-3xl animate-on-scroll animation-delay-800 text-left text-xs md:text-sm leading-relaxed">
+        <pre>{String.raw`[ LOUD INTRO.EXE ]
+> charisma............. MAX
+> frontend............. CHAOTIC GOOD
+> animations........... TOO MANY
+> humility............. not detected`}</pre>
+      </div>
+
+      <div class="mt-8 flex justify-center animate-on-scroll animation-delay-800 px-2">
+        <div class="fake-window static max-w-xl popup-float">
+          <div class="fake-window-bar">
+            <span data-chaos-status>legend status: unreal</span>
+            <span>OK???</span>
+          </div>
+          <div class="p-4 text-left text-sm font-bold text-black">
+            This area updates for absolutely no good reason and exists only to add more visual noise to the homepage.
+          </div>
+        </div>
       </div>
       
       <!-- Scroll indicator -->
-      <div class="absolute bottom--10 left-1/2 transform -translate-x-1/2 animate-bounce mt-16">
-        <a href="#about" class="text-secondary-400 hover:text-primary-600 transition-colors duration-300">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce mt-16">
+        <a href="#about" class="text-red-600 text-2xl md:text-4xl font-bold text-center inline-flex flex-col items-center gap-2">
+          SCROLL DOWN FOR MAGIC!!! ✨
+          <svg class="w-12 h-12 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </a>

@@ -39,13 +39,100 @@ const { title, description = "Gourish Chouhan's personal portfolio - Software Pr
   </head>
   
   <body class="min-h-screen relative overflow-x-hidden">
-    <!-- Global Background Patterns (light & dark) -->
-    <div class="pointer-events-none absolute inset-0 -z-10">
-      <!-- Dark mode pattern -->
-      <div class="hidden dark:block absolute inset-0" aria-hidden="true" style="background:radial-gradient(ellipse 80% 60% at 50% 0%, rgba(6, 182, 212, 0.25), transparent 70%), #000000;"></div>
-      <!-- Light mode pattern -->
-      <div class="dark:hidden absolute inset-0" aria-hidden="true" style="background:#ffffff;">
-        <div class="absolute inset-0" style="background:radial-gradient(circle at top center, rgba(56, 193, 182, 0.5), transparent 70%); filter:blur(80px); background-repeat:no-repeat;"></div>
+    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-noise-grid opacity-60"></div>
+
+    <div class="pointer-events-none fixed inset-x-0 top-0 z-50 border-y-4 border-black bg-yellow-300 text-black">
+      <div class="marquee-track py-2 text-sm font-bold uppercase arcade-font">
+        <span class="px-6">warning: maximum cringe overload</span>
+        <span class="px-6">warning: maximum cringe overload</span>
+        <span class="px-6">warning: maximum cringe overload</span>
+        <span class="px-6">warning: maximum cringe overload</span>
+      </div>
+    </div>
+
+    <div class="pointer-events-none fixed inset-x-0 bottom-0 z-50 border-y-4 border-black bg-cyan-300 text-fuchsia-700">
+      <div class="marquee-track py-2 text-sm font-bold uppercase arcade-font" style="animation-direction: reverse; animation-duration: 12s;">
+        <span class="px-6">elite developer energy loading 9999 percent</span>
+        <span class="px-6">elite developer energy loading 9999 percent</span>
+        <span class="px-6">elite developer energy loading 9999 percent</span>
+        <span class="px-6">elite developer energy loading 9999 percent</span>
+      </div>
+    </div>
+
+    <div class="fly-by text-5xl hidden md:block" style="left: -10%; top: 22%; animation-delay: 0s;">💥</div>
+    <div class="fly-by text-5xl hidden md:block" style="left: -8%; top: 56%; animation-delay: 2.2s;">🔥</div>
+    <div class="fly-by text-5xl hidden md:block" style="left: -9%; top: 82%; animation-delay: 4.4s;">🦄</div>
+
+    <div class="pointer-events-none fixed left-2 top-24 z-30 hidden xl:block ascii-panel tilt-chaos text-[10px] leading-tight opacity-70">
+      <pre>{String.raw`+-------------------------+
+|  ULTRA PORTFOLIO MODE  |
+|  !!! LOOK AT ME !!!    |
+|  CSS SKILLS: TOO MANY  |
+|  VIBES: UNREGULATED    |
++-------------------------+`}</pre>
+    </div>
+
+    <div class="pointer-events-none fixed right-2 bottom-24 z-30 hidden xl:block ascii-panel blink-hard text-[10px] leading-tight opacity-70">
+      <pre>{String.raw`   /\_/\\
+  ( o.o )  CODE CAT ONLINE
+   > ^ <   DISTRACTION++`}</pre>
+    </div>
+
+    <div class="fake-window popup-float left-4 top-40 hidden xl:block">
+      <div class="fake-window-bar">
+        <span>achievement unlocked</span>
+        <span>X X X</span>
+      </div>
+      <div class="space-y-3 p-4 text-sm font-bold text-black">
+        <p>you have opened the loudest portfolio on earth</p>
+        <div class="flex gap-2">
+          <span class="chaos-chip">epic</span>
+          <span class="chaos-chip">unhinged</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="fake-window popup-float right-4 top-[28rem] hidden xl:block" style="animation-delay: 0.8s;">
+      <div class="fake-window-bar">
+        <span>system alert</span>
+        <span>!!!</span>
+      </div>
+      <div class="space-y-3 p-4 text-sm font-bold text-black">
+        <p>too many colors detected. increasing them anyway.</p>
+        <div class="flex gap-2 text-xl">
+          <span>🚨</span>
+          <span>🌈</span>
+          <span>💥</span>
+          <span>🛸</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="fake-window popup-float left-8 bottom-32 hidden xl:block" style="animation-delay: 1.3s;">
+      <div class="fake-window-bar">
+        <span>music.exe</span>
+        <span>_ [] X</span>
+      </div>
+      <div class="space-y-4 p-4 text-black">
+        <p class="text-sm font-bold uppercase">now playing: html superstar</p>
+        <div class="flex items-end gap-2 h-20">
+          <div class="equalizer-bar h-8"></div>
+          <div class="equalizer-bar h-16" style="animation-delay: 0.1s;"></div>
+          <div class="equalizer-bar h-10" style="animation-delay: 0.2s;"></div>
+          <div class="equalizer-bar h-20" style="animation-delay: 0.3s;"></div>
+          <div class="equalizer-bar h-12" style="animation-delay: 0.4s;"></div>
+          <div class="equalizer-bar h-16" style="animation-delay: 0.5s;"></div>
+          <div class="equalizer-bar h-9" style="animation-delay: 0.6s;"></div>
+          <div class="equalizer-bar h-14" style="animation-delay: 0.7s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cursor-sparks" aria-hidden="true"></div>
+
+    <div class="pointer-events-none fixed inset-x-0 top-24 z-20 flex justify-center">
+      <div class="ascii-panel max-w-2xl text-center text-[10px] sm:text-xs blink-hard opacity-70">
+        <pre>{String.raw`>>> initializing cringe-core v9.9.9 <<<     >>> loading extra nonsense <<<     >>> ascii storm enabled <<<`}</pre>
       </div>
     </div>
 
@@ -53,7 +140,7 @@ const { title, description = "Gourish Chouhan's personal portfolio - Software Pr
     <ProgressBar client:load />
     
     <slot />
-
+    
     <script is:inline>
       // Intersection Observer for scroll animations
       const observeElements = () => {
@@ -76,6 +163,49 @@ const { title, description = "Gourish Chouhan's personal portfolio - Software Pr
       
       // Initialize on DOM load
       document.addEventListener('DOMContentLoaded', observeElements);
+
+      const sparkContainer = document.getElementById('cursor-sparks');
+      const sparkGlyphs = ['*', '+', '✨', '⚡'];
+      let lastSparkTime = 0;
+
+      document.addEventListener('pointermove', (event) => {
+        if (!sparkContainer) return;
+        if (window.innerWidth < 768) return;
+
+        const now = performance.now();
+        if (now - lastSparkTime < 90) return;
+        lastSparkTime = now;
+
+        const spark = document.createElement('span');
+        spark.className = 'cursor-spark';
+        spark.textContent = sparkGlyphs[Math.floor(Math.random() * sparkGlyphs.length)];
+        spark.style.left = `${event.clientX}px`;
+        spark.style.top = `${event.clientY}px`;
+        spark.style.transform = `rotate(${Math.random() * 90}deg)`;
+        sparkContainer.appendChild(spark);
+
+        if (sparkContainer.childElementCount > 18) {
+          sparkContainer.firstElementChild?.remove();
+        }
+
+        window.setTimeout(() => {
+          spark.remove();
+        }, 650);
+      }, { passive: true });
+
+      const popupMessages = [
+        'legend status: unreal',
+        'css intensity increased',
+        'too much style not enough restraint',
+        'web design crime in progress',
+      ];
+
+      window.setInterval(() => {
+        const banner = document.querySelector('[data-chaos-status]');
+        if (banner) {
+          banner.textContent = popupMessages[Math.floor(Math.random() * popupMessages.length)];
+        }
+      }, 1400);
       
       // Smooth scrolling for navigation links
       document.addEventListener('click', (e) => {

@@ -3,11 +3,11 @@
 ---
 
 <header
-  class="fixed top-0 left-0 right-0 z-40 flex justify-center p-4 transition-all duration-300"
+  class="fixed top-10 left-0 right-0 z-40 flex justify-center p-4 transition-all duration-300"
 >
   <nav
     id="nav"
-    class="flex items-center gap-4 bg-white/50 dark:bg-black/50 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/30 shadow-lg px-4 py-2 transition-all duration-300"
+    class="flex items-center gap-4 bg-pink-300/80 backdrop-blur-lg rounded-[2rem] border-4 border-black shadow-lg px-4 py-3 transition-all duration-300 tilt-chaos"
   >
     <!-- Hamburger (visible only on small screens) -->
     <button
@@ -25,10 +25,10 @@
       id="nav-links"
       class="hidden sm:flex items-center gap-2 sm:gap-4 flex-col sm:flex-row"
     >
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#about" class="nav-link">About???</a></li>
+      <li><a href="#projects" class="nav-link">Epic Stuff</a></li>
+      <li><a href="#skills" class="nav-link">Power Level</a></li>
+      <li><a href="#contact" class="nav-link">Spam Me</a></li>
       <li>
         <a
           href="/Resume.pdf"
@@ -36,7 +36,7 @@
           rel="noopener noreferrer"
           class="nav-link-button"
         >
-          Resume
+          Resume LOL
         </a>
       </li>
     </ul>
@@ -132,22 +132,21 @@
 
 <style>
   .nav-link {
-    @apply text-sm sm:text-base text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium transition-colors duration-200 px-2 py-1 rounded-md;
+    @apply text-sm sm:text-base font-bold transition-colors duration-200 px-2 py-1 rounded-md;
+    color: #111827;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #111827;
   }
   .nav-link-button {
-    @apply text-sm sm:text-base text-white px-4 py-1.5 rounded-full hover:bg-black transition-colors duration-200 font-medium;
-    background-color: #475569;
-  }
-  .dark .nav-link-button {
-    background-color: #94a3b8;
-    color: white;
-  }
-  .dark .nav-link-button:hover {
-    background-color: white;
-    color: black;
+    @apply text-sm sm:text-base text-black px-4 py-1.5 rounded-full transition-colors duration-200 font-bold;
+    background: linear-gradient(135deg, #ffe600, #ff8500);
+    border: 3px solid #111827;
   }
   .theme-toggle-button {
-    @apply w-9 h-9 rounded-full flex items-center justify-center text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white hover:bg-gray-500/10 transition-colors duration-200;
+    @apply w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200;
+    color: #111827;
+    background: rgba(255, 255, 255, 0.55);
+    border: 3px solid #111827;
   }
   #theme-icon-dark {
     display: none;
@@ -159,6 +158,6 @@
     display: block;
   }
   header.scrolled nav {
-    box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.95);
   }
 </style>

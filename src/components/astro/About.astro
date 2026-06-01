@@ -2,18 +2,22 @@
 // Modern about section
 ---
 
-<section id="about" class="section-padding bg-secondary-50 dark:bg-secondary-800 relative overflow-hidden">
+<section id="about" class="section-padding relative overflow-hidden">
   <!-- Background pattern -->
-  <div class="absolute inset-0 opacity-5 dark:opacity-10">
-    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+  <div class="absolute inset-0 opacity-30 bg-noise-grid"></div>
+  <div class="absolute -left-8 top-24 text-7xl animate-bounce">🕺</div>
+  <div class="absolute right-6 top-16 text-6xl animate-pulse">✨</div>
+  <div class="absolute right-10 bottom-10 text-8xl animate-spin">💿</div>
+  <div class="absolute inset-0" style="background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.55), transparent 18%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.08), transparent 22%);"></div>
   </div>
   
   <div class="container-custom relative">
     <!-- Section header -->
     <div class="text-center mb-16 animate-on-scroll">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-        About Me
-      </h2>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 gradient-text">
+          About The Legend
+        </h2>
+        <p class="text-lg font-bold text-black">Every sentence is here to scream confidence and cause mild eye strain.</p>
     </div>
     
     <!-- Main content -->
@@ -21,23 +25,29 @@
       <!-- Left column - Description -->
       <div class="animate-on-scroll">
         <div class="space-y-6">
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-            Hello! I'm Gourish Chouhan, a Software Product Engineer with
-            expertise in building scalable, user-centric applications. I transform complex
-            requirements into elegant, efficient solutions.
+          <p class="text-xl text-black mb-6 leading-relaxed font-bold">
+            Hello!!! I am Gourish Chouhan, software engineer, pixel wrestler, and full-time destroyer of boring layouts. I convert normal requirements into loud, energetic, impossible-to-ignore web experiences.
           </p>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-            My approach combines technical excellence with user experience
-            design, ensuring every application I build is not only functional
-            but also intuitive and performant. I specialize in React and
-            modern JavaScript frameworks, with a keen eye for responsive
-            design using Tailwind CSS.
+          <p class="text-xl text-black mb-6 leading-relaxed font-bold">
+            My approach combines engineering, design instincts, and a dangerous amount of enthusiasm. I build with React, modern JavaScript, and enough CSS to make every viewport feel like it drank six energy drinks.
           </p>
-          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            Currently expanding my expertise in Data Structures and Algorithms
-            with Python and Java, while continuously working on innovative
-            projects that solve real-world problems and drive business value.
+          <p class="text-xl text-black leading-relaxed font-bold">
+            Currently leveling up through data structures, algorithms, and real-world products while maintaining a deeply committed relationship with over-the-top creative chaos. Respectfully: subtlety is not the brand today.
           </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="chaos-chip">Certified Keyboard Smasher ⌨️</span>
+            <span class="chaos-chip">UI Fireworks Specialist 🎆</span>
+            <span class="chaos-chip">Professional Overthinker 🧠</span>
+            <span class="chaos-chip">Possibly Too Online 📡</span>
+          </div>
+          <div class="ascii-panel mt-8 text-xs leading-relaxed">
+            <pre>{String.raw`ME.EXE STATUS REPORT
+--------------------
+confidence: [##########]
+restraint:   [#---------]
+vibes:       [##########]
+glitter css: [##########]`}</pre>
+          </div>
         </div>
       </div>
       
@@ -49,9 +59,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Full-Stack Development</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Building complete web applications with React, Node.js, and modern databases.
+          <h3 class="text-lg font-semibold text-black mb-2">Full-Stack Wizardry</h3>
+          <p class="text-black text-sm font-bold">
+            Shipping frontends, backends, and dramatic entrances with React, Node.js, and databases.
           </p>
         </div>
         
@@ -61,9 +71,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Responsive Design</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Creating beautiful, mobile-first interfaces with Tailwind CSS and modern design principles.
+          <h3 class="text-lg font-semibold text-black mb-2">Responsive Chaos</h3>
+          <p class="text-black text-sm font-bold">
+            Making loud interfaces behave on mobile, desktop, and whatever cursed screen size shows up.
           </p>
         </div>
         
@@ -73,9 +83,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364-.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Problem Solving</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Continuous learning in algorithms and data structures to tackle complex challenges.
+          <h3 class="text-lg font-semibold text-black mb-2">Problem Obliteration</h3>
+          <p class="text-black text-sm font-bold">
+            Turning confusing bugs and weird requirements into something users can actually enjoy.
           </p>
         </div>
         
@@ -85,9 +95,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance Focus</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Optimizing applications for speed, scalability, and exceptional user experience.
+          <h3 class="text-lg font-semibold text-black mb-2">Turbo Vibes</h3>
+          <p class="text-black text-sm font-bold">
+            Balancing performance, polish, and totally unnecessary animation with suspicious confidence.
           </p>
         </div>
       </div>

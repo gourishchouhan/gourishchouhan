@@ -71,7 +71,8 @@ export default function Skills() {
   const duplicated = useMemo(() => [...skills, ...skills], []);
 
   return (
-    <section id="skills" className="py-20 bg-secondary-50 dark:bg-secondary-800">
+    <section id="skills" className="relative overflow-hidden py-20">
+      <div className="pointer-events-none absolute inset-0 bg-noise-grid opacity-25"></div>
       <div className="container mx-auto px-6">
         <motion.div
           ref={ref}
@@ -80,12 +81,11 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Technical Skills
+          <h2 className="gradient-text mb-6 text-4xl font-bold text-black md:text-5xl">
+            Technical Power Level
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Proficient in modern technologies and frameworks for building
-            scalable applications
+          <p className="mx-auto max-w-3xl text-xl font-bold text-black">
+            Infinite scrolling badges, giant icons, and enough confidence to convince everyone this stack is elite.
           </p>
         </motion.div>
 
@@ -119,7 +119,7 @@ export default function Skills() {
                 return (
                   <motion.div
                     key={`${skill.name}-${index}`}
-                    className="flex-shrink-0 h-32 bg-white dark:bg-gray-900 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center hover:shadow-lg hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-300"
+                    className="flex h-32 flex-shrink-0 flex-col items-center justify-center rounded-lg border-4 border-black bg-white shadow-md transition-all duration-300 hover:shadow-lg"
                     style={{
                       width: `${CARD_WIDTH}px`,
                       marginRight: isLastInSet ? `${GAP_X}px` : `${GAP_X}px`,
@@ -130,8 +130,8 @@ export default function Skills() {
                       className="text-4xl mb-2"
                       style={{ color: iconColor }}
                     />
-                    <h3 className="text-gray-900 dark:text-white font-semibold text-center text-sm">
-                      {skill.name}
+                    <h3 className="text-center text-sm font-semibold text-black">
+                      {skill.name} !!!
                     </h3>
                   </motion.div>
                 );
@@ -140,8 +140,8 @@ export default function Skills() {
           </div>
 
           {/* Gradient overlays for smooth edges */}
-          <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-secondary-50 to-transparent dark:from-secondary-800"></div>
-          <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-secondary-50 to-transparent dark:from-secondary-800"></div>
+          <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-20 bg-gradient-to-r from-yellow-300 to-transparent"></div>
+          <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-20 bg-gradient-to-l from-cyan-300 to-transparent"></div>
         </div>
 
         {/* Skills Categories */}
@@ -152,34 +152,34 @@ export default function Skills() {
           className="mt-16 grid gap-6 md:grid-cols-4"
         >
           <div className="text-center">
-            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-              Frontend
+            <h3 className="mb-2 text-lg font-semibold text-black">
+              Frontend Wizardry
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm font-bold text-black">
               React, TypeScript, Tailwind CSS, Next.js
             </p>
           </div>
           <div className="text-center">
-            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-              Backend
+            <h3 className="mb-2 text-lg font-semibold text-black">
+              Backend Boom
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm font-bold text-black">
               Node.js, Express.js, Python, Java
             </p>
           </div>
           <div className="text-center">
-            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-              Database
+            <h3 className="mb-2 text-lg font-semibold text-black">
+              Data Dungeon
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm font-bold text-black">
               MongoDB, PostgreSQL, Redis
             </p>
           </div>
           <div className="text-center">
-            <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-              Tools
+            <h3 className="mb-2 text-lg font-semibold text-black">
+              Bonus Loot
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm font-bold text-black">
               Git, Docker, Figma
             </p>
           </div>
