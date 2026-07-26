@@ -1,17 +1,1 @@
-<div align="center">
-
-
-█ ▌█▌▌ ██ ▌█ ▌▌█▌▌ ██▌ █▌▌ ██ ▌▌█ █▌█ ▌▌ ██▌█ ▌█ ▌▌ █▌▌█ █▌ ▌█
-
-
-**GOURISH CHOUHAN**
-
-<sub>F U L L &nbsp; S T A C K &nbsp; D E V E L O P E R</sub>
-
-
-█ ▌█▌▌ ██ ▌█ ▌▌█▌▌ ██▌ █▌▌ ██ ▌▌█ █▌█ ▌▌ ██▌█ ▌█ ▌▌ █▌▌█ █▌ ▌█
-
-
-<sub>[gourishchouhan.vercel.app](https://gourishchouhan.vercel.app)</sub>
-
-</div>
+# Gourish Chouhan

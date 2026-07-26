@@ -1,29 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/astro/Header.astro';
-import Hero from '../components/astro/Hero.astro';
-import Updates from '../components/astro/Updates.astro';
-import About from '../components/astro/About.astro';
-import Projects from '../components/astro/Projects.astro';
-import Skills from '../components/astro/Skills.astro';
-import Contact from '../components/astro/Contact.astro';
-import Footer from '../components/astro/Footer.astro';
 ---
 
-<Layout 
-  title="Gourish Chouhan - Software Product Engineer"
-  description="Software Product Engineer passionate about building scalable applications with modern technologies. Explore my portfolio of full-stack projects and technical expertise."
->
-  <Header />
-  
-  <main>
-    <Hero />
-    <Updates />
-    <About />
-    <Projects />
-    <Skills />
-    <Contact />
+<Layout title="Gourish Chouhan">
+  <main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center select-none">
+    <div class="space-y-4">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 hover:scale-105 transition-transform duration-500 ease-out">
+        Gourish Chouhan
+      </h1>
+    </div>
   </main>
-  
-  <Footer />
 </Layout>
