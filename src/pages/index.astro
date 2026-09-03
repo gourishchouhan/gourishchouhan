@@ -7,6 +7,31 @@ import Layout from '../layouts/Layout.astro';
   description="A sleek personal portfolio for Gourish Chouhan."
 >
   <main class="name-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Gourish Chouhan</h1>
+    <div class="intro-content">
+      <h1 id="page-title">Gourish Chouhan</h1>
+
+      <div class="intro-actions" aria-label="More about Gourish">
+        <button class="info-button" type="button" aria-label="Job status: Open to work">
+          <span>Job</span>
+          <span class="info-panel" aria-hidden="true">Open to work</span>
+        </button>
+
+        <button class="info-button location-button" type="button" aria-label="Location: India">
+          <span>Location</span>
+          <span class="info-panel location-panel" aria-hidden="true">
+            <span class="earth-visual">
+              <img
+                class="earth-model"
+                src="/cartoon-earth-india.png"
+                alt=""
+                width="384"
+                height="384"
+              />
+            </span>
+            <span class="location-copy">Based in India</span>
+          </span>
+        </button>
+      </div>
+    </div>
   </main>
 </Layout>
