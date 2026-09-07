@@ -117,14 +117,16 @@ button {
   opacity: 1;
 }
 
-.location-panel {
+.location-panel,
+.job-panel {
   justify-items: center;
   gap: 0.6rem;
   min-width: 12rem;
   color: #fff;
 }
 
-.earth-visual {
+.earth-visual,
+.job-visual {
   position: relative;
   display: grid;
   place-items: center;
@@ -132,18 +134,260 @@ button {
   height: 9rem;
 }
 
-.earth-model {
+.earth-model,
+.job-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.location-copy {
+.location-copy,
+.job-copy {
   color: #aaa;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.resume-link {
+  position: fixed;
+  right: max(0px, calc(15vw - 7rem));
+  bottom: 0;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  padding: 0;
+  border-radius: 0;
+  mix-blend-mode: multiply;
+  color: #ddd;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 350ms ease, visibility 350ms;
+}
+
+.light-ready:not(.light-on) .resume-link {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.light-on .resume-link { transition-delay: 220ms; }
+
+.light-switch {
+  position: fixed;
+  top: 0;
+  right: calc(15vw - 4.25rem);
+  z-index: 3;
+  width: 7rem;
+  padding: 0 0 0.5rem;
+  background: transparent;
+  color: #aaa79f;
+  cursor: pointer;
+  border-radius: 0 0 0.6rem 0.6rem;
+  touch-action: none;
+  user-select: none;
+}
+
+.light-switch[hidden] { display: none; }
+
+.hanging-light {
+  display: block;
+  width: 100%;
+  height: 150px;
+  overflow: visible;
+}
+
+.pull-cord { transform-origin: 89px 0; }
+
+.bulb-glass {
+  fill: #242424;
+  transition: fill 300ms ease;
+}
+
+.light-on .bulb-glass { fill: #fff; }
+.light-on .light-switch { color: #777; }
+
+.light-switch:hover { color: #fff1c7; }
+.light-switch:focus-visible {
+  outline: 2px solid #e9d5b5;
+  outline-offset: 3px;
+}
+
+.spotlight-beam {
+  position: fixed;
+  inset: 84px 0 0 auto;
+  width: 100vw;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: #fff;
+  /* Equal spread to both sides of the lamp; the viewport clips the right edge. */
+  clip-path: polygon(calc(85% - 2.25rem) 0, calc(85% + 2.25rem) 0, 120% 100%, 50% 100%);
+  transition: opacity 220ms ease;
+}
+
+.light-on .spotlight-beam { opacity: 1; }
+
+.intro-content { position: relative; z-index: 1; mix-blend-mode: difference; }
+
+@media (max-width: 520px) {
+  .light-switch { right: calc(15vw - 3.04rem); width: 5rem; }
+  .hanging-light { height: 110px; }
+  .spotlight-beam {
+    top: 61px;
+    clip-path: polygon(calc(85% - 1.625rem) 0, calc(85% + 1.625rem) 0, 130% 100%, 40% 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-link, .spotlight-beam, .bulb-glass { transition: none; }
+  .light-on .resume-link { transition-delay: 0ms; }
+}
+
+.resume-character {
+  display: block;
+  width: 14rem;
+  height: 17.5rem;
+  object-fit: contain;
+  transform-origin: center bottom;
+  transition: transform 180ms ease;
+}
+
+.resume-link:focus-visible {
+  outline: 2px solid #e9d5b5;
+  outline-offset: 4px;
+}
+
+html.resume-open {
+  overflow: hidden;
+}
+
+.resume-dialog {
+  width: min(52rem, calc(100vw - 2rem));
+  height: min(58rem, calc(100dvh - 2rem));
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #444;
+  border-radius: 0.85rem;
+  background: #f5f3ef;
+  color: #fff;
+  box-shadow: 0 24px 90px #0009;
+  overflow: hidden;
+}
+
+.resume-dialog::backdrop {
+  background: rgb(0 0 0 / 78%);
+}
+
+.resume-sheet {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.resume-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.75rem 0.6rem 1rem;
+  background: #151515;
+}
+
+.resume-toolbar h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.resume-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-tools a {
+  color: #e9d5b5;
+  font-size: 0.75rem;
+  text-underline-offset: 3px;
+}
+
+.resume-close {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.5rem;
+  background: #292929;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.resume-close:hover {
+  background: #3b3b3b;
+}
+
+.resume-tools :focus-visible,
+.resume-fallback a:focus-visible {
+  outline: 2px solid #b58a4c;
+  outline-offset: 3px;
+}
+
+.resume-document {
+  display: block;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.resume-fallback {
+  margin: 0;
+  padding: 0.65rem;
+  color: #555;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.resume-fallback a {
+  color: #333;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .resume-link {
+    right: max(0px, calc(15vw - 4.5rem));
+  }
+
+  .resume-character {
+    width: 9rem;
+    height: 11.25rem;
+  }
+}
+
+/* Keep the torso anchored to the viewport edge, including landscape phones. */
+@media (max-height: 640px) {
+  .resume-link {
+    right: max(0px, calc(15vw - 12.8dvh));
+  }
+
+  .resume-character {
+    width: 25.6dvh;
+    height: 32dvh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-character {
+    transition: none;
+  }
+
+  .resume-link:hover .resume-character {
+    transform: none;
+  }
 }
 
 @media (max-width: 520px) {
