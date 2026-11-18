@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import WorldExperience from "../components/world/WorldExperience";
+import { portfolio } from "../data/portfolio";
+---
+<Layout title={`Portfolio world | ${portfolio.name}`}>
+  <main class="world">
+    <header>
+      <nav aria-label="Portfolio navigation"><a href="/">← Portfolio</a><a href={portfolio.resumeUrl}>Résumé ↗</a></nav>
+
+    </header>
+    <section aria-label="Interactive landscape">
+      <WorldExperience client:only="react"><p slot="fallback">The interactive landscape requires JavaScript and WebGL.</p></WorldExperience>
+    </section>
+  </main>
+</Layout>
+<style is:global>
+  .world {position:relative;height:100dvh;overflow:hidden;background:#bfdad8;color:#1b302f;}
+  .stage {position:absolute;inset:0;touch-action:none;outline-offset:-4px;}
+  .world nav,.world-controls {position:absolute;z-index:1;display:flex;align-items:center;gap:.6rem;}
+  .world nav {top:max(1rem,env(safe-area-inset-top));left:max(1rem,env(safe-area-inset-left));}
+  .world-controls {bottom:max(1rem,env(safe-area-inset-bottom));left:1rem;}
+  .world a,.world button,.world-controls p,.world [role=status],.world [slot=fallback] {color:#243c38;background:#fff6e3;padding:.45rem .85rem;border-radius:.4rem;border:1px solid #52635e55;font:500 .85rem/1.5 Manrope,sans-serif;margin:0;}
+  .world a {text-decoration:none;}
+  .world button {cursor:pointer;}
+  .world :focus-visible {outline:2px solid #214f62;}
+  .world [role=status],.world [slot=fallback] {position:absolute;top:45%;left:50%;transform:translateX(-50%);}
+  .touch-pad {display:none;}
+  @media (pointer:coarse) {
+    #controls {display:none;}
+    .touch-pad {display:grid;grid-template-columns:repeat(3,44px);gap:3px;}
+    .touch-pad button {height:44px;touch-action:none;user-select:none;}
+    .touch-pad button:first-child {grid-column:2;}
+    .touch-pad button:nth-child(2) {grid-column:1;}
+    .world-controls {align-items:end;flex-wrap:wrap;}
+  }
+</style>

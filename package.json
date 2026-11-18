@@ -6,15 +6,22 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check"
   },
   "dependencies": {
-    "@astrojs/tailwind": "6.0.2",
+    "@astrojs/react": "7.1.9",
+    "@react-three/fiber": "9",
     "astro": "7.2.10",
-    "tailwindcss": "^3.4.13"
+    "react": "19",
+    "react-dom": "19",
+    "three": "0.183"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6"
+    "@astrojs/check": "0.9.12",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "@types/three": "0.183",
+    "typescript": "5"
   }
 }
